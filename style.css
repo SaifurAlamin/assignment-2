@@ -1,0 +1,204 @@
+*{
+
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: honeydew;
+}
+
+/* ----------------Start Main CSS---------------- */
+/* ----------------Start Main CSS---------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    
+  }
+  nav h3{
+      font-size: 1.5em;
+      color: rgb(78, 73, 73);
+  }
+.banner{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap: 133px;
+    /* background-color: burlywood; */
+    
+}
+h1{
+    font-size: 3em;
+    color: rgb(78, 73, 73);
+}
+
+.banner-right{
+    display: flex;
+    justify-content: flex-end;
+    height: 475px;
+    width: 475px;
+}
+.banner-right img:hover{
+    transform: scale(1.2);
+    transform: rotate(360deg);
+    transition: transform 2s linear;
+}
+.banner-right img{
+    width: 414px;
+    height: 440px;
+
+} 
+.btn{
+    display: flex;
+    flex-direction: row;
+    width: 196px;
+    height: 44px;
+    font-size: 1.2em;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    background-image: linear-gradient(90deg, #c21273,#FF008E);
+    border-radius: 25px;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+.fa-long-arrow-alt-right{
+    color:white;
+    }
+/* 2nd part------------------ */
+
+.section-title{
+    font-size: 2.5em;
+    color: rgb(78, 73, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 25px;
+    
+    
+
+}
+.card{
+    width: 340px;
+    height: 509px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    box-shadow: 10px 10px 30px rgb(214, 208, 208) ;
+    margin-bottom: 33px;
+    border-radius: 10px;
+    padding-left: 20px;
+    overflow: hidden;
+    
+
+}
+.card img{
+    width: 310px;
+    height: 274px;
+    padding-top: 10px;
+}
+.card img:hover{
+    transform: scale(1.2);
+    transition: transform 1s linear;
+}
+
+
+.fa-star.filled,.fa-star-half-alt.empty{
+    width:10px;
+    /* height: 5px; */
+    color: gold;
+    margin-right:3px;
+}
+.rating span{
+    padding: 10px;
+}
+.ratting p{
+    color: rgb(175, 170, 170);
+}
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(241, 65, 94);
+    font-size:1.5em;
+}
+.fa-long-arrow-alt-right.new-arrow{
+    color:rgb(241, 65, 94);
+    font-size:.7em;
+}
+/* ___________Form Part__________________ */
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+form h2{
+    font-size: 2em;
+    color: rgb(78, 73, 73);
+}
+.user-form{
+    width: 100%;
+    margin-bottom: 10px;
+    border:1px solid gray;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.user-form:focus {
+    color: black;
+
+}
+/* ---------------Footer-Part-------------------- */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(18, 5, 44);
+}
+footer h2{
+    color:white;
+    text-align: center;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+@media only screen and (max-width:688px)
+ {
+    .banner{ 
+        grid-template-columns:repeat(1,1fr);
+        height: fit-content;
+            
+        }
+        .banner-left {
+            padding:20%;
+        }
+      
+
+        
+     
+      .all-cards{
+          grid-template-columns: repeat(1,1fr);
+          height: fit-content;
+      } 
+    } 
+    @media only screen and (min-width:688px)and (max-width:992px) {
+        .banner{
+            grid-template-columns: repeat(1,1fr);
+            height:fit-content
+        } 
+        .all-cards{
+            grid-template-columns: repeat(2,1fr);
+            height: fit-content;
+        }
+        
+    }
